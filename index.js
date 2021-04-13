@@ -62,7 +62,7 @@ function fieri(cust) {
         "Sponsored by... nobody!",
         "99% of the time, it works every time!",
         "I wonder what this button does... <a href=\"https://www.youtube.com/watch?v=dQw4w9WgXcQ\" class=\"waves-effect waves-light btn-small\" style=\"-webkit-text-fill-color: white;\">click</a>",
-        "There are [undefined] of these flavourtexts. Collect em all!",
+        "There are 50 of these flavourtexts. Collect em all!",
         "Plug my <a href=\"https://instagram.com/nroize\" style=\"-webkit-text-fill-color: white;\" class=\"waves-effect waves-light btn-small\">Instagram</a>? I would never!",
         "Sir, this is a Wendy's", 
         "Why are we here... just to Debate?",
