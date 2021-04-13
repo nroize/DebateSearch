@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Debate Club Words</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <style>
+            html, body {
+                height: 100%;
+                overflow-x: hidden;
+            }
+            
+            #dispTable {
+                overflow-y:scroll;
+            }
+        </style>
+    </head>
+    <body onload="start()">
+        <div class="container">
+            <h4 id="name"></h4>
+            <table class="resizeable-table">
+                <thead>
+                    <tr>
+                        <td>Word</td>
+                        <td><a href="javascript:sortByCount();" id="count">Count (Descending)</a></td>
+                    </tr>
+                </thead>
+                <tbody id="dispTable">
+
+                </tbody>
+            </table>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center;">
+            <a class="waves-effect waves-light btn-small" style="position: fixed; bottom: 0; margin-bottom: 0.5rem;;" href="index.html">Home</a>
+        </div>
+    <script src="user.js"></script>
+    </body>
+</html>
