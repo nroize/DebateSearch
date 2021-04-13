@@ -12,6 +12,21 @@
             html, body {
                 height: 100%;
             }
+
+            .rainbow-text {
+                background-image: repeating-linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red, violet);
+                background-size: 800% 800%;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                line-height: normal;
+                animation: rainbow 16s ease infinite;
+            }
+
+            @keyframes rainbow { 
+                0%{background-position:0% 50%}
+                50%{background-position:100% 25%}
+                100%{background-position:0% 50%}
+            }
         </style>
         <script>
             document.onkeypress = searchListen;
@@ -24,12 +39,13 @@
             }
         </script>
     </head>
-    <body onload="enableAutocomplete()">
+    <body onload="enableAutocomplete(); fieri()">
         <div class="container" style="height: 100%;">
             <div class="valign-wrapper" style="height: 75%;">
-                <div class="col s12 center-block" style="text-align: center; width: 75%; max-width: 500px;">
+                <div class="col s12 center-block" style="text-align: center; width: 80%; max-width: 500px;">
                     <div style="margin-bottom: 2rem;">
                         <h2>Debate Word Search</h2>
+                        <h5 id="flavour" class="rainbow-text"></h5>
                     </div>
                     <form id="login-form" action="search()">
                         <div class="input-field">
