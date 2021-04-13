@@ -6,8 +6,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <style>
             html, body {
                 height: 100%;
@@ -28,16 +28,7 @@
                 100%{background-position:0% 50%}
             }
         </style>
-        <script>
-            document.onkeypress = searchListen;
-            function searchListen(e) {
-                var x = e || window.event;
-                var key = (x.keyCode || x.which);
-                if (key == 13 || key == 3) {
-                    document.getElementById("search-button").click();
-                }
-            }
-        </script>
+        <script src="index.js"></script>
     </head>
     <body onload="enableAutocomplete(); fieri()">
         <div class="container" style="height: 100%;">
@@ -47,7 +38,7 @@
                         <h2>Debate Word Search</h2>
                         <h5 id="flavour" class="rainbow-text"></h5>
                     </div>
-                    <form id="login-form" action="search()">
+                    <form id="login-form" action="javascript:search();">
                         <div class="input-field">
                             <input id="search" type="text" style="text-align: center;" autocomplete="off">
                             <label for="search">Search a name</label>
@@ -62,6 +53,5 @@
                 </div>
             </div>
         </div>
-        <script src="index.js"></script>
     </body>
 </html>
