@@ -17,11 +17,11 @@ async function getUserData() {
 async function sortByCount() {
     if (sort == "ascending") {
         sort = "descending";
-        document.getElementById("count").innerHTML = "Count (Ascending)";
+        document.getElementById("count").innerHTML = "<b>Count (Ascending)</b>";
         await renderTable();
     } else {
         sort = "ascending";
-        document.getElementById("count").innerHTML = "Count (Descending)";
+        document.getElementById("count").innerHTML = "<b>Count (Descending)</b>";
         await renderTable();
     }
 }
